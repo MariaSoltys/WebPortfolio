@@ -1,0 +1,51 @@
+<!doctype html>
+<html lang="en">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <meta name="theme-color" content="#f8f6fc">
+  <meta name="description" content="The portfolio of Your Name — selected projects and experience.">
+  <title>Your Name — Portfolio</title>
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=DM+Mono:wght@400;500&family=DM+Sans:wght@400;500;600;700&family=Space+Grotesk:wght@500;600;700&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+  <div class="page-shell">
+    <aside class="profile" id="about" aria-label="About me">
+      <div class="profile-card">
+        <div class="portrait" role="img" aria-label="Temporary profile illustration"><span>YN</span><i></i></div>
+        <p class="eyebrow"><span class="status-dot"></span> OPEN TO OPPORTUNITIES</p>
+        <h1 id="profile-name"></h1>
+        <p class="role" id="profile-role"></p>
+        <p class="bio" id="profile-bio"></p>
+        <div class="profile-rule"></div>
+        <section class="side-section">
+          <h2>SKILLS &amp; TOOLS <span id="skill-count"></span></h2>
+          <div id="skill-list" class="skill-list"></div>
+        </section>
+        <div class="profile-rule"></div>
+        <section class="side-section">
+          <h2>FIND ME</h2>
+          <nav id="profile-links" class="profile-links" aria-label="Profile links"></nav>
+        </section>
+        <div class="profile-foot"><span>BASED IN</span><b id="profile-location"></b></div>
+      </div>
+      <p class="side-note"><span class="status-dot"></span> Always learning, always building.</p>
+    </aside>
+
+    <main class="work" id="work">
+      <section class="intro" id="top">
+        <div><p class="eyebrow">A LITTLE BIT ABOUT WHAT I DO</p><h2>Ideas into<br><span>things that work.</span></h2></div>
+        <p class="intro-copy">A growing collection of projects, experiments, and things I’ve learned along the way.</p>
+      </section>
+      <div class="section-heading" id="projects"><div><span class="eyebrow">THE WORK</span><h2>Project timeline <span class="project-total" id="project-count">00</span></h2></div><span class="mono heading-note">A WORK IN PROGRESS <span class="status-dot"></span></span></div>
+      <section class="timeline" id="project-list" aria-label="Project timeline"></section>
+      <footer class="work-footer" id="contact"><span>© <span id="year"></span> <b id="footer-name"></b></span><span>MADE WITH INTENTION <span class="footer-heart">✳</span></span></footer>
+    </main>
+  </div>
+  <script src="data.js"></script>
+  <script src="app.js"></script>
+</body>
+</html>
