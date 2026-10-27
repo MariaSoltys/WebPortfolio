@@ -10,19 +10,20 @@
   <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
   <link href="https://fonts.googleapis.com/css2?family=DM+Mono:wght@400;500&family=DM+Sans:wght@400;500;600;700&family=Space+Grotesk:wght@500;600;700&display=swap" rel="stylesheet">
   <link rel="stylesheet" href="styles.css">
+  <link rel="stylesheet" href="project-presentation.css">
 </head>
 <body>
   <div class="page-shell">
     <aside class="profile" id="about" aria-label="About me">
       <div class="profile-card">
-        <div class="portrait" role="img" aria-label="Temporary profile illustration"><span>YN</span><i></i></div>
+        <div class="portrait"><img src="my_photo.jpg" alt="Portrait of Mariia Soltys"></div>
         <p class="eyebrow"><span class="status-dot"></span> OPEN TO OPPORTUNITIES</p>
         <h1 id="profile-name"></h1>
         <p class="role" id="profile-role"></p>
         <p class="bio" id="profile-bio"></p>
         <div class="profile-rule"></div>
         <section class="side-section">
-          <h2>SKILLS &amp; TOOLS <span id="skill-count"></span></h2>
+          <h2>SKILL SET <span id="skill-count"></span></h2>
           <div id="skill-list" class="skill-list"></div>
         </section>
         <div class="profile-rule"></div>
@@ -38,13 +39,23 @@
     <main class="work" id="work">
       <section class="intro" id="top">
         <div><p class="eyebrow">A LITTLE BIT ABOUT WHAT I DO</p><h2>Ideas into<br><span>things that work.</span></h2></div>
-        <p class="intro-copy">A growing collection of projects, experiments, and things I’ve learned along the way.</p>
+        <div class="intro-contact"><p class="eyebrow">FIND ME</p><nav class="profile-links intro-links" id="intro-contact-links" aria-label="Contact links"></nav></div>
       </section>
       <div class="section-heading" id="projects"><div><span class="eyebrow">THE WORK</span><h2>Project timeline <span class="project-total" id="project-count">00</span></h2></div><span class="mono heading-note">A WORK IN PROGRESS <span class="status-dot"></span></span></div>
       <section class="timeline" id="project-list" aria-label="Project timeline"></section>
       <footer class="work-footer" id="contact"><span>© <span id="year"></span> <b id="footer-name"></b></span><span>MADE WITH INTENTION <span class="footer-heart">✳</span></span></footer>
     </main>
   </div>
+  <dialog class="image-viewer" id="image-viewer" aria-label="Full-screen project image viewer">
+    <button class="image-viewer-close" id="image-viewer-close" type="button" aria-label="Close image viewer">&times;</button>
+    <button class="image-viewer-nav image-viewer-prev" id="image-viewer-prev" type="button" aria-label="Previous image">&#8249;</button>
+    <figure class="image-viewer-figure">
+      <img id="image-viewer-image" alt="">
+      <figcaption id="image-viewer-caption"></figcaption>
+      <span class="image-viewer-count" id="image-viewer-count"></span>
+    </figure>
+    <button class="image-viewer-nav image-viewer-next" id="image-viewer-next" type="button" aria-label="Next image">&#8250;</button>
+  </dialog>
   <script src="data.js"></script>
   <script src="app.js"></script>
 </body>
