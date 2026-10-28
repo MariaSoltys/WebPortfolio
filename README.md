@@ -20,14 +20,15 @@ Add an object to the `projects` array in `data.js`. Use `goal`, `technicalDescri
   technicalDescription: "What did you build, and how?",
   result: "What was achieved? Include measured results where available.",
   skills: ["JavaScript", "UI design"],
-  image: "projects/my-project/preview.jpg",
-  imageAlt: "A preview of the project",
+  image: [
+    "projects/my-project/preview.jpg",
+    "projects/my-project/results.png"
+  ],
+  imageAlt: ["Project preview", "Project results"],
   link: "https://example.com"
 }
 ```
 
-Project skills are combined into the profile automatically. Categorize each skill in the `skillCategories` map in `data.js`; skills without a category appear under Technical skills. Profile skills are listed in `profile.skillGroups`.
+For one image, `image` can be a single path string. For an image gallery, use an array of paths as above; the images display in a grid and open in a full-screen viewer with previous/next controls. `imageAlt` can be a matching array of descriptions, or one shared description. For a video, use `video: "projects/my-project/demo.mp4"` and optionally add a `poster` image.
 
-## Privacy
-
-`UserNote.md` is excluded by `.gitignore` and should stay local. Review `data.js` and `projects/` before publishing because their contents are public in a public repository. Do not store secrets in website files.
+Project skills are combined into the profile automatically. The groups are configured in `profile.skillGroups` (`soft`, `hard`, and `tools`), and their colors are styled in `project-presentation.css`. Categorize project skills in the `skillCategories` map in `data.js`; skills without a category appear under Technical skills. Add profile-only skills directly to the appropriate `profile.skillGroups` entry.
