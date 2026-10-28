@@ -88,6 +88,8 @@ window.PORTFOLIO = {
       technicalDescription: "Developed a multilingual NLP question-answering system using PDF text extraction and retrieval-augmented generation (RAG).",
       result: "Example from the saved output: asked in Ukrainian about the cost of a new T-90; the system answered, \"70 million roubles per year.\"",
       skills: ["Python", "PyTorch", "Data processing", "RAG", "Evaluation", "LLM", "NLP"],
+      image: "projects/CourseWork/coursework_result.png",
+      imageAlt: "A scheme of an autoencoder used in the project",
       link: "https://github.com/MariaSoltys/ML_CourseWork",
       note: "Lviv Polytechnic University project"
     },
